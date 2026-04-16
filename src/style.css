@@ -24,15 +24,27 @@ body {
 .toolbar {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
 }
 
-button {
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ebf4ff;
+}
+
+button,
+select {
   border: 1px solid #9ab;
   background: rgba(23, 35, 52, 0.86);
   color: #f3f8ff;
   border-radius: 8px;
   padding: 10px 14px;
+}
+
+button {
   cursor: pointer;
 }
 
@@ -41,6 +53,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.meta-panel,
 .story-panel {
   max-width: 900px;
   width: 100%;
@@ -51,10 +64,28 @@ button:disabled {
   backdrop-filter: blur(4px);
 }
 
+.meta-panel {
+  display: grid;
+  gap: 8px;
+}
+
+.meta-panel p {
+  margin: 0;
+}
+
+.speaker {
+  margin: 0;
+  color: #9cc7ff;
+}
+
 .story-text {
   line-height: 1.8;
   min-height: 96px;
   white-space: pre-wrap;
+}
+
+.skip-button {
+  margin-bottom: 10px;
 }
 
 .choices {
