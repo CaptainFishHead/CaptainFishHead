@@ -1,0 +1,100 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Segoe UI', 'PingFang SC', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #090d13;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  background-size: cover;
+  background-position: center;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ebf4ff;
+}
+
+button,
+select {
+  border: 1px solid #9ab;
+  background: rgba(23, 35, 52, 0.86);
+  color: #f3f8ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.meta-panel,
+.story-panel {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(12, 16, 27, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.meta-panel {
+  display: grid;
+  gap: 8px;
+}
+
+.meta-panel p {
+  margin: 0;
+}
+
+.speaker {
+  margin: 0;
+  color: #9cc7ff;
+}
+
+.story-text {
+  line-height: 1.8;
+  min-height: 96px;
+  white-space: pre-wrap;
+}
+
+.skip-button {
+  margin-bottom: 10px;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.ending {
+  font-weight: 700;
+  color: #ffdd93;
+}
